@@ -166,3 +166,4 @@ Weights, `.env`, virtual environments, and generated files are excluded from Git
 ## License
 
 [Apache-2.0](LICENSE). Bundled upstream sources retain their original copyright and license notices. Matcha-TTS and its bundled HiFi-GAN code retain their MIT licenses. Upstream code and recipe documentation retain their original contents and language; the application interface and project-level guides remain English. Separately downloaded weights retain their publishers' licenses.
+
