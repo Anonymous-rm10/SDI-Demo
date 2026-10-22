@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASR LLM TTS Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <header><span class="badge">ASR · LLM · TTS AGENT</span><span id="connection">Connecting</span></header>
+    <h1>Speak naturally.</h1>
+    <p class="intro">Qwen3-ASR · LLM API · CosyVoice · JEV</p>
+    <section class="controls" aria-label="Voice controls">
+      <button id="mic" disabled>Enable microphone</button>
+      <button id="interrupt" class="secondary" disabled>Stop reply</button>
+      <button id="reset" class="secondary" disabled>Clear conversation</button>
+      <span id="status" role="status">Waiting for connection</span>
+    </section>
+    <p class="hint">Enable the microphone to keep listening. Pause to receive a reply. Use headphones to reduce echo; JEV decides when a new utterance should interrupt.</p>
+    <section id="messages" aria-label="Conversation" aria-live="polite"></section>
+    <form id="form"><input id="text" maxlength="2000" placeholder="Or type a message…" aria-label="Message" autocomplete="off"><button id="send" disabled>Send</button></form>
+    <details><summary>Connection and turn decisions</summary><pre id="events"></pre></details>
+  </main>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

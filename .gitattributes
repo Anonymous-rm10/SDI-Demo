@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve upstream bytes so manifest SHA-256 values survive checkout.
+third_party/** -text
+*.wav binary
+*.tiktoken binary

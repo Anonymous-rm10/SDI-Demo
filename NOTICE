@@ -1,0 +1,6 @@
+ASR LLM TTS Agent
+
+Includes inference/training source and local extensions from Qwen3-ASR,
+CosyVoice, train-jev and FireRedASR2S, plus Matcha-TTS and its HiFi-GAN code.
+Original copyright and license notices are retained in third_party/.
+See THIRD_PARTY_NOTICES.md and third_party/manifest.json for provenance.

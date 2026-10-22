@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asr-llm-tts-agent"
+version = "0.1.0"
+description = "Qwen3-ASR + LLM API + CosyVoice, with JEV turn decisions"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["fastapi>=0.110", "uvicorn[standard]>=0.27", "httpx>=0.27", "numpy>=1.24"]
+
+[project.scripts]
+voice-agent = "voice_agent.__main__:main"
+asr-llm-tts-agent = "voice_agent.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["voice_agent*"]
+
+[tool.setuptools.package-data]
+voice_agent = ["web/*"]
